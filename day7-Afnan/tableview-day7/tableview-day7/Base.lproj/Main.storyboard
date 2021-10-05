@@ -30,6 +30,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJk-JX-6ZG">
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="200.33333333333334"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="190" id="Z3h-gM-eJO"/>
                                                         <constraint firstAttribute="height" constant="200" id="bqf-XG-l9j"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="qdd-mt-91Z"/>
                                                     </constraints>
@@ -44,7 +45,6 @@
                                                 <constraint firstItem="RJk-JX-6ZG" firstAttribute="centerX" secondItem="gLY-C7-QyX" secondAttribute="centerX" id="2b8-WF-wCL"/>
                                                 <constraint firstItem="RJk-JX-6ZG" firstAttribute="top" secondItem="gLY-C7-QyX" secondAttribute="top" id="46c-5E-aj8"/>
                                                 <constraint firstAttribute="trailing" secondItem="RJk-JX-6ZG" secondAttribute="trailing" id="5wc-bF-PzG"/>
-                                                <constraint firstItem="RJk-JX-6ZG" firstAttribute="centerY" secondItem="gLY-C7-QyX" secondAttribute="centerY" id="eIS-8X-oSn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

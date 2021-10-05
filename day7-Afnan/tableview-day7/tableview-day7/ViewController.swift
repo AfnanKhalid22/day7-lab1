@@ -19,6 +19,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
         return emojis.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let afnancell = tableview.dequeueReusableCell(withIdentifier: "123", for: indexPath) as! viewcell
@@ -33,17 +34,35 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
         return afnancell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let emoje = emojis[indexPath.row]
+        
+        let alertcontroller = UIAlertController(title: "warning!!👾 \(emoje)"
+                                                , message: "we haved hacked you 😬✌🏻 !!! "
+                                                , preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alertcontroller.addAction(
+            UIAlertAction(title: "pay500", style: UIAlertAction.Style.default, handler: { Action in print("hahahah😂")
+            })
+            
+        )
+        
+        self.present(alertcontroller, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableview.delegate = self
         tableview.dataSource = self
-        }
+    }
 }
 
 
 class viewcell : UITableViewCell {
-   
-   @IBOutlet weak var label1: UILabel!
+    
+    @IBOutlet weak var label1: UILabel!
 }
